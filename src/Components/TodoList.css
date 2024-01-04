@@ -30,7 +30,6 @@ h1{
 }
 #outlined-basic{
     color: white;
-    width: 320px;
     border: 1.5px solid #b61aae;
     border-radius: 5px;
       
@@ -40,7 +39,6 @@ h1{
 #Addbtn{
     height: 57px;
     color:white;
-    width:150px;
     border: 1px solid #b61aae;
     margin-bottom: 10px;   
     background: linear-gradient(90deg,rgba(182, 26, 174, 0.528),rgb(182, 26, 174));
@@ -50,9 +48,9 @@ h1{
 #Appbar{
   
     background: linear-gradient(90deg,rgba(182, 26, 174, 0.528),rgb(182, 26, 174));
-    margin-left: 90px;
+  
     margin-top:10px;
-    width: 500px;
+    /* width: 500px; */
     height: 50px;
     display: flex;
     overflow: auto;
@@ -84,22 +82,131 @@ h1{
 }
 
 
-/* @media screen and (min-width:900px) and (max-width:1200px) {
-    #Appbar {
-          margin-left: 80px;
-          width: 500px;
-        }
-    
+
+.container {
+    max-width: 1349px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.1rem;
+    padding-right: 0.1rem;
+}
+
+/* 2xl */
+@media (max-width: 1536px) {
+    .container {
+      max-width: 1349px;
     }
-@media screen and (min-width:700px) and (max-width:900px) {
-#Appbar {
-      margin-left:350px;
+    #Appbar{
+        width:255%;
+        margin-left: 90px;
+    }
+    #outlined-basic{
+        width: 320px;
+    }
+    #Addbtn{
+        width:150px;
+    }
+   
+  }
+  
+  /* xl */
+  @media (max-width: 1280px) {
+    .container {
+      max-width: 1024px;
+    }
+    #Appbar{
+        width:200%;
+        margin-left: 85px;
+    }
+    #outlined-basic{
+        width: 290px;
+    }
+    #Addbtn{
+        width:130px;
+    }
+  }
+  
+  /* lg */
+  @media (max-width: 1024px) {
+    .container {
+      max-width: 768px;
+    }
+    #Appbar{
+        width:150%;
+        margin-left: 80px;
+    }
+    #outlined-basic{
+        width: 270px;
+    }
+    #Addbtn{
+        width:100px;
+    }
+  }
+  
+  /* md */
+  @media (max-width: 768px) {
+    .container {
+      max-width: 640px;
+    }
+    #Appbar{
+        width:100%;
+        margin-left: 70px;
+    }
+    #outlined-basic{
+        width: 250px;
+    }
+    #Addbtn{
+        width:70px;
+    }
+  }
+  
+  /* sm */
+  @media (max-width: 640px) {
+    .container {
+      max-width: 475px;
+    }
+     #Appbar{
+        width:80%;
+        margin-left: 60px;
     }
 
-}
-@media screen and (min-width:300px) and (max-width:700px) {
-    #Appbar {
-          margin-left: 100px;
-        }
+    #outlined-basic{
+        width: 90px;
+    }
+    #Addbtn{
+        width:50px;
+    }
+   
+  }
+  
+  /* xs */
+  @media (max-width: 475px) {
+    .container {
+    max-width: 320px;
+    }
+    #Appbar{
+        width:70%;
+        margin-left: 50px;
+    }
+    #outlined-basic{
+        width: 40px;
+    }
+    #Addbtn{
+        width:30px;
+    }
     
-    } */
+  }
+
+  @media (max-width: 320px) {
+    .container {
+    max-width: 120px;
+    }
+    #Appbar{
+        width:60%;
+        margin-left: 40px;
+    }
+    #outlined-basic{
+        width: 30px;
+    }
+   
+  }
